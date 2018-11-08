@@ -1,14 +1,62 @@
-
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
-
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+body {
+  background-color: #38302D;
+}
+
+.masthead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background: url('/bean-background.jpg') no-repeat;
+  z-index: -1;
+}
+
+#main-nav {
+  text-align: center;
+  margin: auto;
+}
+
+#main-content .profile {
+  text-align: center;
+  border-radius: 2em;
+}
+
+.avatar {
+  border-radius: 50% !important;
+  width: 25%;
+  border: 5px solid #ccc;
+  margin: 1em;
+}
+
+.navbar-brand {
+  margin: auto;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+#subscriber {
+  max-height: 50vh;
+  overflow: hidden;
+}
+
+.chat-card {
+  border-radius: 2em;
+}
+
+.subscriber {
+  min-height: 50vh;
+}
+
+.publisher {
+  min-height: 50vh;
 }

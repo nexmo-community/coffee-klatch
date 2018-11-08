@@ -35,4 +35,15 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'opentok' => [
+        'key' => env('OPEN_TOK_API_KEY'),
+        'secret' => env('OPEN_TOK_API_SECRET')
+    ],
+
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect' => '/login/google/callback'
+    ]
+
 ];

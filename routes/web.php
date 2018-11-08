@@ -11,6 +11,15 @@
 |
 */
 
+use App\Room;
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('index');
+})->name('home');
+
+Route::post('/chat/callback', 'ChatController@callback')->name('chat.callback');
+Route::get('/chat', 'ChatController@index');
+
+Route::get('login/google', 'Auth\LoginController@redirectToProvider')->name('login');
+Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('logout', 'Auth\LoginController@logout');
